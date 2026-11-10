@@ -47,6 +47,7 @@ class StudentController extends Controller
 
     public function update(Request $request, Student $student)
     {
+        dd($request->all());
         $validated = $request->validate([
             'student_number' => 'required|string|max:50|unique:students,student_number,' . $student->id,
             'name' => 'required|string|max:100',

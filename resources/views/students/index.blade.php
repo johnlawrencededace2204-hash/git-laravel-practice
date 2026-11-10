@@ -176,6 +176,7 @@
                             <button type="submit"
                                     class="delete-btn"
                                     onclick="return confirm('Are you sure you want to delete this student?')">
+                                    
                                 Delete
                             </button>
                         </form>
